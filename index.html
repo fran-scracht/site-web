@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"href="./crapeau.jpg">
+    <link rel="stylesheet" href="./index.css">
+    <script src='http://localhost:3000/socket.io/socket.io.js'></script>
+    <script src='http://localhost:3000/socket.io/socket.io.min.js'></script>
+    <title>Crapeau.fr</title>
+</head>
+<!-- faire un site web avec inscription, page d'acceuil -->
+<body>
+    <nav>
+         <form class='navContainer'>
+                <h4 class='couple'>Couple.fr</h4>
+                <img src='./couple.jpg' class='cameleon'>
+            <div class="container_nom">
+                <label for="nom" class='labelNom'>Entrer le nom</label>
+                <input type="text" id='nom'>
+                <div class="erreur_span_1">
+                    <span class='span_1'></span>
+                </div>
+            </div>
+            <div class="container_password">
+                <label for="password" class='labelPassword'>Entrez le mot de passe</label>
+                <input type="password" id='password'>
+                <div class="erreur_span_2">
+                    <span></span>
+                </div>
+            </div>
+            <input type='submit' class='connexion'value='Connexion'>
+         </form>
+    </nav>
+    <header>
+        <div class="container_formulaire">
+            <form method="GET">
+                <div class="input_text">
+                    <label for="ecrit" class='Labels'>Entrez votre nom</label>
+                    <input type="text" id="ecrit" class='Inputs'>
+                    <span></span>
+                </div>
+                <div class="input_email">
+                    <br>
+                    <br>
+                    <label for="email" class='Labels'>Entrez votre email</label>
+                    <input type="email"id="email" class='Inputs'>
+                    <span></span>
+                </div>
+                <div class="input_password">
+                    <br>
+                    <br>
+                    <label for="password_2" class='Labels'>Entrez votre mot de passe</label>
+                    <input type="password"id="password_2" class='Inputs'>
+                    <p class='progresse'></p>
+                    <p class='plusprogresse'></p>
+                    <span ></span>
+                </div>
+                <div class="input_confirme">
+                    <br>
+                    <br>
+                    <label for="confirme" class='Labels'>Confirmez le mot de passe</label>
+                    <input type="password"id="confirme" class='Inputs'>
+                    <span></span>
+                </div>
+                <div class="input_valider">
+                    <br>
+                    <br>
+                    <input type="checkbox" id="accepter" class='inputaccepter'>
+                    <label for="accepter" class="Labelaccepter">En cochant <span>vous accepter les CGV.</span></label>
+                    <br>
+                    <br>
+                    <input type="submit" id='bouton_valider'value="Validé">
+                </div>
+            </form>
+        </div>
+    </header>
+    <script src="./index.js"></script>
+</body>
+</html>
